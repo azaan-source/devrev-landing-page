@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .typewriter {
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid gray; /* The typewriter cursor */
+    color: gray;
+    margin: 0 auto; /* Centers the text */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: blink-caret 0.75s step-end infinite; /* Blinking cursor */
+    font-size: 1.25rem /* 20px */;
+    line-height: 1.75rem /* 28px */;
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: gray;
+    }
+  }
+}
