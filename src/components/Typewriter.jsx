@@ -30,10 +30,10 @@ const Typewriter = () => {
           }
         }
       },
-      isDeleting ? deletingSpeed : typingSpeed
+      isDeleting ? deletingSpeed : typingSpeed //setTimeout takes 2 param first the function to execute, then the time this is the time
     );
 
-    return () => clearTimeout(timeout);
+    return () => clearTimeout(timeout); //This cleanup function clears the timeout when the component unmounts or when the effect is re-triggered,
   }, [text, isDeleting, index]);
 
   return <span className="font-unica text-xs typewriter">{text}</span>;
