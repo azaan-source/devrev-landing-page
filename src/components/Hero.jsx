@@ -50,7 +50,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div id="logos " className="logos ">
+      <div id="logos " className="logos mb-10">
         <div className="logo-slide  inline-block ">
           <img
             src={hundredms}

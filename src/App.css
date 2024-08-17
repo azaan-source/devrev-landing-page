@@ -59,7 +59,7 @@
   }
   .logo-slide {
     display: inline-block;
-    animation: 18s slide linear infinite;
+    animation: 12s slide linear infinite;
     white-space: nowrap;
   }
   @keyframes slide {
